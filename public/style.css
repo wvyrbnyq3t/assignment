@@ -1,0 +1,86 @@
+main{
+  background-color: #fff;
+  box-shadow: 0 0 3px #333;
+  color: #333;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 768px;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 0;
+
+  .container{
+    border-bottom: 1px solid #333;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+
+    .container-ttl{
+      color: #07c;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  }
+  .manage-schedule{
+    .list{
+      .list-item{
+        border-top: 1px solid #bababa;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding: 10px 0;
+        p{
+          margin: 0 auto;
+          width: 30%;
+        }
+        .ttl{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .controls{
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      li{
+        margin: 0 auto;
+        width: 30%;
+
+        input{
+          display: block;
+          margin-top: 10px;
+          outline: 1px solid #07c;
+          padding: 5px;
+          text-align: center;
+          width: 100%;
+        }
+        label{
+          display: inline-flex;
+          justify-content: center;
+          font-weight: bold;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+    button{
+      background-color: #07c;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      padding: 6px 12px;
+      width: 100%;
+    }
+  }
+}
