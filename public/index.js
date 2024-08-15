@@ -4,9 +4,7 @@ $('#js-addBtn').click(async function(){
   ,   memo = $('#js-schedule-memo').val();
 
   if(date !== "" && ttl !== ""){
-    const res = await fetch('/api/user', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ date: date, ttl: ttl, memo: memo }) })
-    const body = await res.text()
-    console.log(body)
+    await fetch('/api/user', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ date: date, ttl: ttl, memo: memo }) })
     alert('登録しました');
 
     // reload
